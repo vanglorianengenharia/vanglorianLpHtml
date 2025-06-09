@@ -1,7 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 body{
   background: #012310;
   max-width: 100%;
-  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 .blockContent{
   max-width: 1120px;
@@ -9,9 +14,9 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
 }
-ul, li, a, button {
+ul, li, a {
   text-decoration: none;
   list-style: none;
   color: inherit;
@@ -25,45 +30,46 @@ h1{
 .ulBlock{
   display: flex;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   align-items: center;
   justify-content: center;
 }
 img{
-  width: 35rem; 
+  max-width: 30rem; 
   height: auto;
 }
-button {
+a {
+   display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.9rem;
   text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 0.3rem;
+  font-weight: 600;
+  letter-spacing: 0.12rem;
   background: #012310;
   color: #ffffffdf;
   border: 3px solid #003718;
-  width: 16.875rem; 
-  height: 5.625rem;
-  padding: 1rem 2rem;
+  width: 16.9rem;
+  height: 5.65rem;
+  padding: 0.8rem 1rem;
   border-radius: 0.7rem;
-  
-  &:hover{
-    cursor: pointer;
-    border: 3px solid #f6cc70;
-    background-color: #dbb25a;
-    color: #012310;
-  }
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+  border: 3px solid #f6cc70;
+  background-color: #dbb25a;
+  color: #012310;
 }
 .fab{
   margin-right: 0.4rem;
 }
 @media (max-width: 1000px){
-  button{
+  a{
     width: 13.75rem;
-    padding: 1rem 1.5rem;
+    font-size: 14.4px;
   }
-  img{
-   width: 31.25rem; 
-}
 }
 @media (max-width: 860px){
   .ulBlock{
@@ -71,13 +77,10 @@ button {
     gap: 2rem;
     margin-top: 3rem;
 }
-  a{
-    max-width: 6.25rem;
-  }
   img{
    width: 18.75rem; 
 }
-  button{
+  a{
     font-size: 0.75rem;
     height: 4.375rem;
   }
