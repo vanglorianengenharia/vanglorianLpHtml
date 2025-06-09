@@ -6,11 +6,10 @@ body{
 .blockContent{
   max-width: 1120px;
   margin: 0 auto;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
 }
 ul, li, a, button {
   text-decoration: none;
@@ -26,12 +25,12 @@ h1{
 .ulBlock{
   display: flex;
   gap: 2rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   align-items: center;
   justify-content: center;
 }
 img{
-  width: 700px; 
+  width: 35rem; 
   height: auto;
 }
 button {
@@ -42,36 +41,28 @@ button {
   background: #012310;
   color: #ffffffdf;
   border: 3px solid #003718;
-  width: 270px;  /* largura fixa */
-  height: 90px;
+  width: 16.875rem; 
+  height: 5.625rem;
   padding: 1rem 2rem;
   border-radius: 0.7rem;
   
   &:hover{
     cursor: pointer;
-    border: 3px solid #d1a23e;
-    background-color: #ba8c29;
+    border: 3px solid #f6cc70;
+    background-color: #dbb25a;
     color: #012310;
   }
 }
 .fab{
   margin-right: 0.4rem;
 }
-
-@media (max-width: 1200px){
-  img{
-  width: 600px; 
-  height: auto;
-}
-
-}
 @media (max-width: 1000px){
   button{
-    width: 220px;
+    width: 13.75rem;
     padding: 1rem 1.5rem;
   }
   img{
-   width: 500px; 
+   width: 31.25rem; 
 }
 }
 @media (max-width: 860px){
@@ -79,23 +70,20 @@ button {
     flex-direction: column;
     gap: 2rem;
     margin-top: 3rem;
-   
 }
   a{
-    max-width: 100px;
+    max-width: 6.25rem;
   }
   img{
-   width: 350px; 
+   width: 18.75rem; 
 }
   button{
-      font-size: 0.75rem;
-      height: 70px;
-    
+    font-size: 0.75rem;
+    height: 4.375rem;
   }
-
 }
 @media (max-width: 360px){
-    img{
-   width: 250px; 
+  img{
+   width: 15.625rem; 
 }
 }
